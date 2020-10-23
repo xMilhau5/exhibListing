@@ -1,0 +1,102 @@
+body {
+    margin: 5%;
+    background-color: #002B53;
+}
+
+#logo img {
+    width: 60%;
+    position: center;
+    margin: auto 0;
+    display: block;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#myInput {
+    background-image: url('Resources/search-icon.png'); /* Add a search icon to input */
+    background-size: 25px;
+    background-position: left center; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 30%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    display: inline-block;
+  }
+
+  #filter-buttons {
+      display: inline-block;
+      width: 50%;
+  }
+
+  #filter-buttons button {
+      padding: 10px 10px;
+      margin: 0 3%;
+  }
+
+  header {
+      display:block;
+      background-color:#002B53;
+      padding-top: 5px;
+  }
+  
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    background-color:white;
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+    display: block;
+  }
+  
+  #myTable a {
+      color: #F7984C;
+      font-weight: bold;
+  }
+
+  #myTable .platinum {
+    background: rgb(139,163,214);
+    background: linear-gradient(90deg, rgba(139,163,214,1) 0%, rgba(243,243,255,0.9920343137254902) 74%, rgba(139,163,214,1) 100%);
+  }
+
+  #myTable .platinum #level {
+      color: #0052ff;
+      font-weight: bold;
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) 
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  *?
