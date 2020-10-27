@@ -22,6 +22,26 @@ function myFunction() {
   }
 }
 
+
+
+function filter(level) {
+
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+    txtValue = td.textContent || td.innerText;
+    if (txtValue === level) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
 window.onload = function () {
     
 // When the user scrolls the page, execute myFunction
