@@ -22,8 +22,6 @@ function myFunction() {
   }
 }
 
-
-
 function filter(level) {
 
   table = document.getElementById("myTable");
@@ -41,6 +39,17 @@ function filter(level) {
     }
   }
 }
+
+function showAll() {
+
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+        tr[i].style.display = "";
+    }
+  }
 
 window.onload = function () {
     
